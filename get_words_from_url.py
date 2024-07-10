@@ -10,8 +10,8 @@ from funasr import AutoModel
 from nltk.tokenize import sent_tokenize
 
 # 配置参数
-access_key = '2b17b479-8c9f-4229-ae41-039de55aba26'
-access_secret = 'Bh0VmueQMWY_HTWn1@RVM2#j8wOY6EQB&9SPfpqm*tVIOAYx'
+access_key = 'your_key '
+access_secret = 'your_secret_key '
 nonce = 'qwertyuiopasdfghjklzxcvbnm'
 timestamp = str(int(time.time() * 1000))
 

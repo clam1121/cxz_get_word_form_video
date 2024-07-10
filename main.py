@@ -77,3 +77,13 @@ from nltk.tokenize import sent_tokenize
 #                      batch_size_s=300,
 #                      hotword='魔搭')
 # print(res[0]['text'])
+
+import subprocess
+
+def download_video(url, filename):
+    command = ['ffmpeg', '-i', url, filename]
+    subprocess.run(command)
+    print(f"视频已成功下载并保存为 {filename}")
+
+# 示例用法
+download_video("https://shstudy.shec.edu.cn//resource-center-resource/test/f5817ce4-37b1-0a41-01ea-2598ebda7a23.mp4?sign=1719889333-EeJWEc3H50oCl-0-adee6465e8095d54d32e13e72fe18be9", "video.mp4")
